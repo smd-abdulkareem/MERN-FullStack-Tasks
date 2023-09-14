@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-TASK6</title>
+    <style>
+        h1{
+            text-align: center;
+           
+        }
+        img{
+            width:200px;
+            height:200px;
+            border-radius: 100%;
+            display: block;
+            margin:auto;
+        }
+        .type1{
+            display: flex;
+            flex-direction: column;
+            margin:15px;
+            width:400px;
+        }
+        .container{
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        .label1{
+            font-weight: bold;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .login{
+            height: 30px;
+            width:400px;
+            margin: 15px;
+            color: aliceblue;
+            background-color:rgb(51, 163, 2) ;
+            border: none;
+        }
+        .rm{
+            margin-left:12px;
+        }
+        .last{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 15px;
+            margin-top:10px;
+            background-color: rgb(240, 239, 239);
+            
+        }
+        #cn{
+            background-color: rgb(241, 85, 85);
+            border:none;
+            height: 30px;
+            width:70px;
+            border-radius: 5px;
+            color: aliceblue;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top:15px;
+        }
+        .fg{
+            margin-top:5px;
+        }
+        input[type=checkbox] {
+          accent-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 6</h1>
+    <div class="container">
+        <img src="profile_pic.jpg" alt="profile picture">
+        <form action="">
+            <div class="type1">
+            <label for="UN" class="label1">Username</label>
+            <input type="text" name="Username" id="UN" placeholder="Enter Username" style="height: 25px;">
+            </div>
+            <div class="type1">
+                <label for="pass" class="label1">Password</label>
+                <input type="password" name="password" id="pass" placeholder="Enter Password" style="height: 25px;">
+            </div>
+            <div>
+                <input type="submit" value="Login"  class="login">
+            </div>
+            <div class="rm">
+                <input type="checkbox" name="Remember" id="rm" value="Remember">
+                <label for="rm">Remember me</label>
+            </div>
+            <div class="last">
+                <div>
+                    <input type="submit" id="cn" name="cancel" value="Cancel">
+                </div>
+                <div class="fg">
+                    <p>Forgot password?</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

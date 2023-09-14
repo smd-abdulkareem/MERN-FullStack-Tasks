@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-TASK4</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #Save {
+            cursor: pointer;
+            transition: box-shadow 0s;
+        }
+
+        #Save:hover {
+            box-shadow: inset 0 0 5px orange;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;  
+        }
+
+        label {
+            width: 200px; 
+        }
+
+        input, select {
+            flex: 1;
+            padding: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Task 4</h1>
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="FN">Full Name:</label>
+                <input type="text" name="Name" id="FN" placeholder="Full Name">
+            </div>
+
+            <div class="form-group">
+                <label for="UN">Username:</label>
+                <input type="text" name="Username" id="UN" placeholder="Username">
+            </div>
+
+            <div class="form-group">
+                <label for="pswrd">Password:</label>
+                <input type="password" name="Password" id="pswrd" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+                <label for="rpswrd">Re Password:</label>
+                <input type="password" name="Re Password" id="rpswrd" placeholder="Re Password">
+            </div>
+
+            <div class="form-group">
+                <label for="add">Address:</label>
+                <input type="text" name="Address" id="add" placeholder="Address">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" name="Age" id="age" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <label for="Gen">Gender:</label>
+                <select id="Gen">
+                    <option>Select</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="Oth">Others</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Save" id="Save" onclick="alert('Saved successfully')">
+        </form>
+    </div>
+</body>
+</html>

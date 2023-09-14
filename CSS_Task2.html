@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-TASK2</title>
+    <style>
+          h1{
+            text-align: center;
+          }
+          h3{
+            
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+          .container{
+            display:flex;
+            justify-content: space-evenly;
+            
+          }
+        .container1{
+            display:flex;
+            flex-direction: column;
+            align-content:center;
+            justify-content: left;
+            width:200px;
+            height:300px;
+            margin-right:0;
+            padding:10px;
+            border: 2px solid black;
+        }
+        .container2{
+            display:flex;
+            padding-top:10px;
+            length: 100px;
+        }
+       #item{
+        padding:20px;
+        font-size:18px;
+        color:blue;
+        background-color: lightblue;
+        cursor:none;
+        transition:background-color 0s,color 0s;
+       }
+       #item:hover{
+        background-color: orange;
+        color:white;
+       }
+       #item2{
+        padding:20px;
+        font-size:18px;
+        height:20px;
+        color:blue;
+        background-color: lightgray;
+        border: 1px solid blue;
+        cursor:none;
+        transition:background-color 0s,color 0s;
+       }
+       #item2:hover{
+        background-color: grey;
+        color:white;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1>Task 2</h1>
+    <div class="container">
+    <div>
+    <h3>Vertical Navigational bar</h3>
+    <div class="container1">
+        <a id="item">Home</a>
+        <a id="item">Java</a>
+        <a id="item">CSS</a>
+        <a id="item">HTML</a>
+        <a id="item">Bootstrap</a>
+    </div>
+    </div>
+<div>
+    <h3>Horizontal Navigation Bar</h3>
+    <div class="container2">
+        <div id="item2">
+        <a>Home</a>
+    </div>
+    <div id="item2">
+        <a>CSS</a>
+    </div>
+    <div id="item2">
+        <a>HTML</a>
+    </div>
+    <div id="item2">
+        <a>Java</a>
+    </div>
+    <div id="item2">
+        <a>Bootstrap</a>
+    </div>
+    </div>
+</div>
+    </div>
+</body>
+</html>
